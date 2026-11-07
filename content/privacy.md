@@ -2,8 +2,6 @@
 title: "Privacy Policy"
 description: "How Select Distinct handles your data. Short answer: we don't."
 url: "/privacy/"
-menu: main
-weight: 40
 ---
 
 **Last updated:** November 2026
