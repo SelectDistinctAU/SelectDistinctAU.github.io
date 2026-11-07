@@ -1,0 +1,83 @@
+baseURL = 'https://selectdistinctau.github.io/'
+languageCode = 'en-au'
+title = 'Select Distinct'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+enableGitInfo = true
+summaryLength = 30
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = 'production'
+  description = 'Android apps built with care. No data harvesting, no hidden agendas.'
+  defaultTheme = 'auto'
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+
+  [params.homeInfoParams]
+    Title = 'Building tools. Making a difference.'
+    Content = '''
+We create Android apps that help people navigate life with less stress and more clarity.
+No data harvesting, no hidden agendas — just honest, useful software built with care.
+'''
+
+  [[params.socialIcons]]
+    name = 'github'
+    title = 'GitHub'
+    url = 'https://github.com/SelectDistinctAU'
+
+  [[params.socialIcons]]
+    name = 'email'
+    title = 'Email'
+    url = 'mailto:SelectDistinctAU@pm.me'
+
+[[menu.main]]
+  identifier = 'fotologue'
+  name = 'Fotologue'
+  url = '/fotologue/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'routes'
+  name = 'Distinct Routes'
+  url = '/distinct-routes/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'docs'
+  name = 'Docs'
+  url = '/docs/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'privacy'
+  name = 'Privacy'
+  url = '/privacy/'
+  weight = 40
+
+[[menu.main]]
+  identifier = 'github'
+  name = 'GitHub'
+  url = 'https://github.com/SelectDistinctAU'
+  weight = 50
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[imaging]
+  quality = 85
